@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import random
-# number = random.randint(-10000, 10000)
-number = "arnol"
+number = random.randint(-10000, 10000)
 if type(number) == int:
     last_num = int(str(number)[-1])
     if number < 0:
