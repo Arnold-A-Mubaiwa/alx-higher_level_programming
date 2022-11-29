@@ -14,3 +14,24 @@ if the last digit is 0: the string and is 0
 if the last digit is less than 6 and not 0: the string and is less than 6 and not 0
 followed by a new line
 
+#### 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
+
+Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+
+You can only use one print function with string format
+You can only use one loop in your code
+You are not allowed to store characters in a variable
+You are not allowed to import any module
+
+#### 3. When I was having that alphabet soup, I never thought that it would pay off
+
+Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+
+Print all the letters except q and e
+You can only use one print function with string format
+You can only use one loop in your code
+You are not allowed to store characters in a variable
+You are not allowed to import any module
+
+#### 4. Hexadecimal printing
+Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal (as in the following example)
