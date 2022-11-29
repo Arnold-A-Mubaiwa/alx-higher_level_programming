@@ -35,3 +35,12 @@ You are not allowed to import any module
 
 #### 4. Hexadecimal printing
 Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal (as in the following example)
+
+
+
+The following are the resources used to achieve the coding challeges
+[https://www.w3schools.com/python/ref_string_format.asp]
+
+[https://www.w3schools.com/charsets/ref_html_ascii.asp#:~:text=ASCII%20is%20a%207%2Dbit,are%20all%20based%20on%20ASCII.]
+
+[https://docs.python.org/3/library/string.html#string-formatting]
