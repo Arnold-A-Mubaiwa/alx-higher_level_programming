@@ -10,5 +10,5 @@ def fizzbuzz():
         elif num % 5 == 0:
             toprint = "Buzz"
         else:
-            toprint = num 
+            toprint = num
         print("{0}".format(toprint), end=" ")
