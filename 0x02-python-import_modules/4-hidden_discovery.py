@@ -7,4 +7,4 @@ if __name__ == '__main__':
         if i.startswith('_'):
             continue
         else:
-            print({}.format(i))
+            print("{}".format(i))
