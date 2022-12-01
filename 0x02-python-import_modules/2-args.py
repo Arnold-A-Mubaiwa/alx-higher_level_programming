@@ -10,5 +10,5 @@ elif num_of_args == 2:
     print("{}: {}".format(num_of_args-1, argv[num_of_args-1]))
 else:
     print("{} arguments:".format(num_of_args-1))
-    for i in range(1,num_of_args):
+    for i in range(1, num_of_args):
         print("{}: {}".format(i, argv[i]))
