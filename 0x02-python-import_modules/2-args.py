@@ -2,10 +2,13 @@
 from sys import argv
 
 num_of_args = len(argv)
-print(num_of_args)
 
-if num_of_args <= 1:
-    print("0 arguments .")
+if num_of_args == 1:
+    print("{} arguments.".format(num_of_args-1))
+elif num_of_args == 2:
+    print("{} argument:".format(num_of_args-1))
+    print("{}: {}".format(num_of_args-1, argv[num_of_args-1]))
 else:
-    for i in range(num_of_args):
+    print("{} arguments:".format(num_of_args-1))
+    for i in range(1,num_of_args):
         print("{}: {}".format(i, argv[i]))
