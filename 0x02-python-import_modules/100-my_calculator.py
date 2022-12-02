@@ -16,5 +16,12 @@ if __name__ == "__main__":
     result = 0
     a = int(argv[1])
     b = int(argv[3])
-    result = add(a, b)
+    if op is '+':
+        result = add(a, b)
+    elif op is '-':
+        result = sub(a, b)
+    elif op is '/':
+        result = div(a, b)
+    elif op is '*':
+        result = mul(a, b)
     print("{} {} {} = {}".format(a, op, b, result))
