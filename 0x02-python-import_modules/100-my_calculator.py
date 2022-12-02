@@ -22,8 +22,8 @@ if __name__ == "__main__":
             result = div(a, b)
             print("{} {} {} = {}".format(a, operator, b, result))
         else:
-            print("Unknown operator. Available operators: +, -, * and /\n1")
+            print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
     else:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b> \n1")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
