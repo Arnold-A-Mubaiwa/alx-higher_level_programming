@@ -9,5 +9,3 @@ def multiple_returns(sentence):
         first_char = sentence[0]
     tup = length, first_char
     return tup
-
-print(multiple_returns(''))
