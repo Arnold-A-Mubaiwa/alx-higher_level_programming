@@ -5,19 +5,24 @@ def add_tuple(tuple_a=(), tuple_b=()):
     b = 0
     c = 0
     d = 0
-    if len(tuple_a) < 2:
-        b = 0
-        if len(tuple_a) == 0:
-            a = 0
+
+    if len(tuple_a) < 2 or len(tuple_b) < 2:
+        if len(tuple_a) < 2:
+            if len(tuple_a) == 1:
+                a = tuple_a[0]
+        else:
+            a = tuple_a[0]
+            b = tuple_a[1]
+
+        if len(tuple_b) < 2:
+            if len(tuple_b) == 1:
+                c = tuple_b[0]
+        else:
+            c = tuple_b[0]
+            d = tuple_b[1]
     else:
         a = tuple_a[0]
         b = tuple_a[1]
-
-    if len(tuple_b) < 2:
-        d = 0
-        if len(tuple_b) == 0:
-            c = 0
-    else:
         c = tuple_b[0]
         d = tuple_b[1]
 
@@ -25,3 +30,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
     total_2 = b + d
     t = total_1, total_2
     return t
+
+print(add_tuple((),(1,)))
