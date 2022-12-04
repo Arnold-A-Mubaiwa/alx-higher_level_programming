@@ -20,7 +20,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
         else:
             c = tuple_b[0]
             d = tuple_b[1]
-    else:
+    elif len(tuple_a) >= 2 or len(tuple_b) >= 2:
         a = tuple_a[0]
         b = tuple_a[1]
         c = tuple_b[0]
