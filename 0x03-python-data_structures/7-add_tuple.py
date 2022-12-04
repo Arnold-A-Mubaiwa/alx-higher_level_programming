@@ -30,5 +30,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
     total_2 = b + d
     t = total_1, total_2
     return t
-
-print(add_tuple((),(1,)))
