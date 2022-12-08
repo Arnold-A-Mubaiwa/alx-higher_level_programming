@@ -7,4 +7,4 @@ def square_matrix_simple(matrix=[]):
         for item in list_i:
             temp.append(item**2)
         new_list.append(temp)
-        return new_list
+    return new_list
