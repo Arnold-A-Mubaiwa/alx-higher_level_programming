@@ -2,13 +2,16 @@
 
 def best_score(a_dictionary):
     best = None
+    best_mark = None
     if len(a_dictionary) != 0 or a_dictionary != None:
-        for  val in a_dictionary.values():
-            if best == None:
-                best = val
+        for  key, val in a_dictionary.items():
+            if best == None and best_mark == None:
+                best = key
+                best_mark = val
             else:
-                if val > best:
-                    best = val
+                if val > best_mark:
+                    best = key
+                    best_mark = val
     else:
-        return best
-    return best
+        return best_mark
+    return best_mark
