@@ -2,7 +2,7 @@
 
 def best_socre(a_dictionary):
     best = None
-    if a_dictionary is not 0:
+    if len(a_dictionary) is not 0:
         for key, value in a_dictionary.items():
             if best == None:
                 best = value
