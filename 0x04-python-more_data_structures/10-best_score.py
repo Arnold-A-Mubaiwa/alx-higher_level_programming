@@ -6,9 +6,10 @@ def best_socre(a_dictionary):
         for key, value in a_dictionary.items():
             if best == None:
                 best = value
+                key = key
             else:
                 if value > best:
                     best = value
     else:
-        return None
+        return best
     return best
