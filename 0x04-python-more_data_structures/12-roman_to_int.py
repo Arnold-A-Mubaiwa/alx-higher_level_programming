@@ -11,7 +11,6 @@ def roman_to_int(roman_string):
                     if v < temp:
                         val += v
                         temp = v
-
                     elif v == temp:
                         val -= temp
                         val += (v + temp)
@@ -21,5 +20,5 @@ def roman_to_int(roman_string):
                         val += (v - temp)
                         temp = v
         return val
-    elif roman_string is None:
+    elif roman_string is None or type(roman_string) != str:
         return 0
