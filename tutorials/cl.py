@@ -14,16 +14,16 @@ class RotateArrays:
                     temp[col-c-1][r] = newTemp[r][c]
             newTemp = temp
         return temp
-        
+
     def rotate(self):
         if self.rotation == 0:
             return self.listT
         else:
             return self.rot()
-        
+
 def main():
-    list_x = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
-    for x in range(10):
+    list_x = [[1,2,3],[4,5,6],[7,8,9]]
+    for x in range(4):
         n = RotateArrays(x, list_x).rotate()
         for i in n:
             print(i)
