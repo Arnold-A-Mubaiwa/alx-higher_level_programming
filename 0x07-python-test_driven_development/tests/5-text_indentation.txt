@@ -1,0 +1,35 @@
+========================
+    Text Indentation
+=========================
+
+In this program we have one function called 
+``text_indentation()``
+The ``text_indentation()`` takes one argument that has to be splitted 
+into multiple sentences
+
+The sentences must end with ., ? or :
+no space at the end or begining of the sentences
+
+Argumnet must be string
+==========================
+if agrument is string
+::
+    >>> text_indentation("some? text somewhere here. and here:)
+    some?
+
+    text somewhere here.
+
+    and here:
+
+Non-Strings
+==========================
+::
+    >>> text_indentation(1)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+    >>> text_indentation([1, 2 , 3])
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
