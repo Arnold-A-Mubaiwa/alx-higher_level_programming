@@ -1,0 +1,36 @@
+======================
+    Print Square
+======================
+
+In this progranm we have one function called ``print_square``
+
+``print_square()`` takes one integer argument and prints a Square
+of size of the argument
+
+Taking integer arguments
+===========================
+::
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+Tracebacks
+=====================
+
+::
+    >>> print_square("t")
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+    >>> print_square(-1):
+    Traceback (most recent call last):
+        ...
+    Value: size must be >= 0
+
+    >>> print_square(1.2)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
