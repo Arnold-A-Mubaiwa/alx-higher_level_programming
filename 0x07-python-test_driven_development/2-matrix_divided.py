@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Define a function matrix_divide(matrix, div)"""
+"""Define a function matrix_divided(matrix, div)"""
 
-def matrix_divide(matrix, div):
+def matrix_divided(matrix, div):
     """Returns a new matrix
     
     Matrix must be an integer
