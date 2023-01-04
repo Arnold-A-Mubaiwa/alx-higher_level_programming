@@ -1,0 +1,40 @@
+==========================
+ Add 2 integers - a and b
+===========================
+
+This program has only one function called
+``add_integer()``
+
+Numbers
+============
+
+This function can take both integers and floats
+For integers: ``add_integer(a, b)``
+
+::
+    >>> from 0-add_integer import add_integer
+    >>> add_integer(1, 5)
+    6
+
+For floats: ``add_integer(2.5, 2.4)``
+
+::
+    >>> add_integer(2.5, 3.4)
+    5.9
+
+Non-integers:
+
+::
+    >>> add_integer("hi", 35)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(55, "t")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    
+
+
+
