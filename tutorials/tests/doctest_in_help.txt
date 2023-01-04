@@ -38,3 +38,4 @@ string, a list, or a tuple.
 
     >>> my_function(['A', 'B', 'C'], 2)
     ['A', 'B', 'C', 'A', 'B', 'C']
+    
