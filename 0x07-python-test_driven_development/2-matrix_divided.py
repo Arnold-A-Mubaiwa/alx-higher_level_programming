@@ -6,12 +6,14 @@ def matrix_divide(matrix, div):
     
     Matrix must be an integer
     """
+
     if type(div) != int:
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if type(matrix) != list:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+
     tmp = len(matrix[0])
     for i in matrix:
         if type(i) != list:
@@ -24,6 +26,7 @@ def matrix_divide(matrix, div):
     for l in matrix:
         temp =[]
         for value in l:
-            temp.append(value/div)
+            temp.append(round(value/div, 2))
         new_list.append(temp)
+
     return new_list
