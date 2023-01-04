@@ -1,0 +1,28 @@
+=======================
+    Say my name
+=======================
+
+This program contains 1 function ``say_my_name()``
+The function is supposed to take two arguments
+Both arguments must only be strings
+
+Strings:
+======================
+Taking two string arguments
+::
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Arnold", "Mubaiwa")
+    Arnold Mubaiwa
+
+Non-string:
+=====================
+::
+    >>> say_my_name(4, "Mubaiwa")
+    Traceback (most recent call late):
+        ...
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Arnold", 5)
+    Traceback (most recent call late):
+        ...
+    TypeError: last_name must be a string
