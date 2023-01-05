@@ -26,7 +26,17 @@ def matrix_divided(matrix, div):
     for l in matrix:
         temp =[]
         for value in l:
-            temp.append(round(value/div, 2))
+            result = value/div
+            if type(result) == float:
+                result = round(result, 2)
+            temp.append(result)
         new_list.append(temp)
 
     return new_list
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+print(matrix_divided(matrix, 3))
+print(matrix)
