@@ -1,0 +1,121 @@
+=============================
+    MATRIX MULTIPLICATION
+=============================
+
+Thif program consist of one function called
+``matrix_mul()``
+
+it takes two arguments ``m_a`` and ``m_b``that are list of lists
+and consists of integers and floats 
+
+First check if it is a list
+example ``matrix_mul([[1,2],[1,2]],[[1,2],[1,2]])``
+::
+    >>> matrix_mul(1, [[1, 2, 3], [1,2,3]])
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a must be a list
+
+    >>> matrix_mul([[1, 2, 3], [1, 2, 2]], 1)
+    Traceback (most recent call last):
+        ...
+    TypeError: m_b must be a list
+
+Check if ``m_a`` or ``m_b`` is a list of a list
+::
+    >>> matrix_mul([1,2],[[1,2],[1,2]])
+    Traceback (most recent call last):
+        ...
+    ValueError: m_a must be a list of lists
+
+    >>> matrix_mul([[1,2],[1,2]],[1,2])
+    Traceback (most recent call last):
+        ...
+    ValueError: m_b must be a list of lists
+
+Check if m_a or m_b is empty
+::
+    >>> matrix_mul([],[[1,2],[1,2]])
+    Traceback (most recent call last)
+        ...
+    ValueError: m_a can't be empty
+
+    >>> matrix_mul([[]] ,[[1,2],[1,2]])
+    Traceback (most recent call last)
+        ...
+    ValueError: m_a can't be empty
+
+    >>> matrix_mul([[1,2],[1,2]], [[]])
+    Traceback (most recent call last)
+        ...
+    ValueError: m_a can't be empty
+
+    >>> matrix_mul([[1,2],[1,2]], [])
+    Traceback (most recent call last)
+        ...
+    ValueError: m_a can't be empty
+
+Check if the list has int or float
+::
+    >>> matrix_mul([['a',1],[1,2]],[[1,2],[1,2]])
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a should contain only integers or floats
+
+    >>> matrix_mul([[1,1],[1,2]],[[1,'a'],[1,2]])
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a should contain only integers or floats
+    
+    >>> matrix_mul('aa' ,[[1,2],[1,2]])
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a should contain only integers or floats
+    
+    >>> matrix_mul([[1,2],[1,2]], 'aa')
+    Traceback (most recent call last):
+        ...
+    TypeError: m_b should contain only integers or floats
+    
+
+Finally, the length of all rows in matrices ``m_a`` and ``m_b`` should be
+equivalent. Otherwise, a TypeError is raised.
+
+::
+
+    >>> m_a = [
+    ... [1, 2],
+    ... [3, 4, 5]
+    ... ]
+    >>> m_b = [
+    ... [1, 2],
+    ... [3, 4]
+    ... ]
+    >>> print(matrix_mul(m_a, m_b))
+    Traceback (most recent call last):
+    TypeError: each row of m_a must should be of the same size
+
+::
+
+    >>> m_a = [
+    ... [1, 2],
+    ... [3, 4]
+    ... ]
+    >>> m_b = [
+    ... [1, 2],
+    ... [3, 4, 5]
+    ... ]
+    >>> print(matrix_mul(m_a, m_b))
+    Traceback (most recent call last):
+    TypeError: each row of m_b must should be of the same size
+
+::
+
+    >>> m_a = [
+    ... [1, 2],
+    ... [3, 4, 5]
+    ... ]
+    >>> m_b = m_a
+    >>> print(matrix_mul(m_a, m_b))
+    Traceback (most recent call last):
+    TypeError: each row of m_a must should be of the same size
