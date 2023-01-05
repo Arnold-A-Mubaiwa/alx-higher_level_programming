@@ -33,10 +33,3 @@ def matrix_divided(matrix, div):
         new_list.append(temp)
 
     return new_list
-
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
-print(matrix_divided(matrix, 3))
-print(matrix)
